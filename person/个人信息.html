@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>个人信息</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING:Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-color">
+    
+            <div class="navbar-header">
+                <a class="navbar-brand "href="#">
+                    <img alt="Brand"src="../images/logo.png"/>
+                </a>
+            </div>
+            <ul class="nav navbar-nav  navbar-right">
+                <li>
+                    <a href="#">用户名</a>
+                </li>
+                <li>
+                    <a class=""href="#">
+                        <img alt="Brand"src="../images/exit.png"/>
+                        退出
+                    </a>
+                </li>
+            </ul>
+    
+    </nav>
+    <div class="container">
+        <div class="row" >
+            <div class="col-md-2">
+                <div class="subNavBox subNavBox-person">
+                    <!-- one -->
+                    <div class="subNav">账号管理</div>
+                    <ul class="navContent" style="display:block">
+                        <li   class="select">
+                            <a href="person-personal-information.html">个人资料</a>
+                        </li>
+                        <li>
+                            <a href="person-password-modify.html">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="person-id-bind.html">账号绑定</a>
+                        </li>
+                    </ul>
+                    <!-- two -->
+                    <div class="subNav">推广中心</div>
+                    <ul class="navContent">
+                        <li>
+                            <a href="#">我的优惠劵</a>
+                        </li>
+                    </ul>
+                    <!-- three -->
+                    <div class="subNav">用户指南</div>
+                    <ul class="navContent" >
+                        <li>
+                            <a href="person-frequently-askes-questions.html">投放条款</a>
+                        </li> 
+                        <li>
+                            <a href="person-frequently-askes-questions.html">新手入门</a>
+                        </li> 
+                        <li>
+                            <a href="person-frequently-askes-questions.html">常见问题</a>
+                        </li>
+                        <li>
+                            <a href="person-frequently-askes-questions.html">联系客服</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <ol class="breadcrumb where">
+                    <li>
+                        <img alt="Brand" src="../images/home.png"  />
+                        <a href="#">你所在的位置</a>
+                    </li>
+                    <li>
+                        <a href="#">账号管理</a>
+                    </li>
+                    <li>
+                        <a href="#">个人信息</a>
+                    </li>
+                </ol>
+                <div class="right-tab person-message">
+        <div class="row">
+                    <div class=" col-md-4 thumbnail wellimg" >
+                        <a href="">
+                            <img src="../images/tx.png" alt="..."/ style="margin:0"></a>
+                    </div>
+                    <form action="">
+
+                        <div class="col-md-4">
+                            <p class="user-personal" style="padding-top:0">
+                                <span>用户名:</span>
+                                韩寒
+                            </p>
+                            <p class="user-personal">
+                                <span>账户类型:</span>
+                                个人账户
+                            </p>
+                            <div class="type user-personal">
+                                <span class="pull-left">性别：</span>
+                                <dl id="type">
+                                    <dd>
+                                        <a href="#" onclick="show(0)"> <b></b>
+                                            男
+                                        </a>
+                                    </dd>
+                                    <dd>
+                                        <a href="#" onclick="show(1)"> <b></b>
+                                            女
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="threeselect">
+                                <span class="at pull-left">所在地:</span>
+                                <div class='selectprovince list-unstyled' id="selectpronvice">
+                                    <span>重庆</span>
+                                    <ul class="pmzero">
+                                        <li>重庆市</li>
+                                        <li>北京市</li>
+                                    </ul>
+                                </div>
+                                <div class='selectcity list-unstyled' id="selectcity">
+                                    <span>重庆</span>
+                                    <ul class="pmzero">
+                                        <li>重庆市</li>
+                                        <li>北京市</li>
+                                    </ul>
+                                </div>
+                                <div class='selectarea list-unstyled' id="selectarea">
+                                    <span>重庆</span>
+                                    <ul class="pmzero">
+                                        <li>重庆市</li>
+                                        <li>北京市</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="user-personal">
+                                <input type="file" style="display:none">
+                                <span >更改头像:</span>
+                                <span class="i-headerimg">浏览</span>
+                                <input class="i-headerimg" type="text">
+                                <span class=" i-headerimg-x" >上传</span>
+                            </p>
+                            <a class="center-block btn btn-next fy18 mt50 mb50">完成修改</a>
+                     </div>
+                     </form>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot-text">
+        <footer class=" text-center">
+            <a href="">版权所有：重庆君盾科技有限公司</a>
+            <a href="">地址：重庆市渝中区上清寺环球广场12楼</a>
+            <a href="">全国服务热线：400-110-9551</a>
+        </footer>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+  
+<script>
+  var type =document.getElementById('type');
+    function show(index){
+    var dd = type.getElementsByTagName("dd");
+    for(var i=0;i<dd.length;i++){
+        if(i==index){
+            dd[i].className="selected";
+        }
+        else{
+            dd[i].className=null;
+        }
+    }
+}
+function sel(item) {
+    var oItem = document.getElementById(item);
+    var oUl = oItem.getElementsByTagName('ul')[0]
+    var aLi = oUl.getElementsByTagName('li');
+    var oSpan = oItem.getElementsByTagName('span')[0];
+    //鼠标移入
+    oItem.onmouseover = function() {
+        oUl.style.display = 'block';
+        for (var i = 0; i < aLi.length; i++) {
+            aLi[i].index = i;
+            aLi[i].onmouseover = function() {
+                this.style.background = '#fff6d3';
+                this.style.color = '#e77802';
+            }
+            aLi[i].onmouseout = function() {
+                this.style.background = 'none';
+                this.style.color = '#666';
+            }
+            aLi[i].onclick = function() {
+            oSpan.innerHTML = this.innerHTML;
+            oUl.style.display = 'none';
+            
+                
+            }
+        }
+
+    }
+    oItem.onmouseout = function() {
+        oUl.style.display = 'none';
+    };
+};
+sel("selectpronvice");
+sel("selectcity");
+sel("selectarea");
+
+</script>
+    </body>
+</html>

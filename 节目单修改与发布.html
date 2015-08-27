@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width, initial-scale=1">
+    <title>节目单修改与发布</title>
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"href="css/index1.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css"rel="stylesheet">
+     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING:Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+<body style="background-color:#f4f4f4">
+    <!-- 导航 -->
+<nav class="navbar navbar-color">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand "href="#">
+                    <img alt="Brand"src="images/logo.png"/>
+                </a>
+            </div>
+            <ul class="nav navbar-nav  navbar-right">
+                <li>
+                    <a href="#">用户名</a>
+                </li>
+                <li>
+                    <a class=""href="#">
+                        <img alt="Brand"src="images/exit.png"/>
+                        退出
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-2"style="magin:0; padding:0">
+                <div class="subNavBox subbox-min-height" id="price-lh">
+                    <!-- one -->
+                      <div class="subNav-first">快速操作项</div>
+                    <ul class="navContent-first">
+                        <li>
+                            <a href="oprator-temtial-control.html">终端控制</a>
+                        </li>
+                        <li>
+                            <a href="oprator-customer-order-manage-nocheck.html">订单审核</a>
+                        </li>
+                        <li>
+                            <a href="#">订单列表</a>
+                        </li>
+                        <li>
+                            <a href="oprator-program-modify.html">节目单修改</a>
+                        </li>
+                    </ul>
+                    <!-- two -->
+                    <div class="subNav">广告终端</div>
+                    <ul class="navContent">
+                        <li>
+                            <a href="oprator-add- newtemria.html">新增终端</a>
+                        </li>
+                        <li>
+                            <a href="oprator-temtial-map.html">终端地图</a>
+                        </li>
+                        <li>
+                            <a href="oprator-temtial-list.html">终端列表</a>
+                        </li>
+                        <li>
+                            <a href="oprator-freetime-query.html">空闲查询</a>
+                        </li>
+                    </ul>
+                    <!-- three -->
+                    <div class="subNav">列表管理</div>
+                    <ul class="navContent">
+                     <li>
+                            <a href="">物业小区管理</a>
+                        </li>
+                        <li>
+                            <a href="oprator-customer- Information-manage.html">广告客户管理</a>
+                        </li>
+                        <li>
+                            <a href="oprator-customer-order-manage.html">广告订单管理</a>
+                        </li>
+                      </ul>
+                    <!-- four -->
+                    <div class="subNav">节目单管理</div>
+                    <ul class="navContent" style="display:block">
+                        <li class="select">
+                            <a href="oprator-program-modify.html">节目单修改 </a>
+                        </li>
+                    </ul>
+                    <!-- five -->
+                    <div class="subNav">实时插播</div>
+                    <ul class="navContent">
+                        <li>
+                            <a href="operator-creat-real-time-information.html">创建插播信息</a>
+                        </li>
+                        <li>
+                            <a  href="oprator-real-time-information-list.html">插播信息列表</a>
+                        </li>
+                    </ul>
+                    <!-- six -->
+                    <div class="subNav">数据报表</div>
+                    <ul class="navContent">
+                        <li>
+                            <a href="#">用户统计</a>
+                        </li>
+                        <li>
+                            <a href="#">订单统计</a>
+                        </li>
+                        <li>
+                            <a href="#">营收统计</a>
+                        </li>
+
+                    </ul>
+                    <!-- seven -->
+                    <div class="subNav">系统管理</div>
+                    <ul class="navContent">
+                        <li>
+                            <a href="oprator-temtial-control.html">终端控制</a>
+                        </li>
+                        <li>
+                            <a href="oprator-price-set.html">价格设置</a>
+                        </li>
+                        <li>
+                            <a href="oprator-user-feedback.html">客户留言</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10"style="margin:0;padding:0" id="price-lr">
+                <ol class="breadcrumb"style="border-radius: 0px; border-bottom:1px solid #ddd">
+
+                    <li>
+                        <img alt="Brand"src="images/home.png"/>
+                        <a href="#"style="color:#666">你所在的位置</a>
+                    </li>
+                    <li>
+                        <a href="#"style="color:#666">节目单管理</a>
+                    </li>
+                    <li>
+                        <a href="#"style="color:#666">节目单修改与发布</a>
+                    </li>
+                    <li>
+                        <a href="#"style="color:#666">节目单修改</a>
+                    </li>
+                </ol>
+                <div class="order-list1">
+                    <ul class="nav navbar-nav center-block order-list-text" style="margin-bottom: 20px;">
+                        <li>
+                            节目单编号:
+                            000001
+                        </li>
+                        <li>
+                            开始日期：
+                            2015-06-18
+                        </li>
+                        <li>
+                            结束日期：
+                            2015-06-18
+                        </li>
+                        <li>
+                            创建日期：
+                            2015-06-18
+                        </li>
+                        <li>文件数：8</li>
+                        <li>节目单状态：正在播放</li>
+                    </ul>
+                </div>
+                <div class="order-list" style="background-color: #f16363; width: 1072px;margin-left:30px;">
+                    <ul class="nav navbar-nav center-block order-list-top">
+                        <li class="select"><strong>视频广告位</strong></li>
+                        <li>图片广告位</li>
+                        <li>文字广告位</li>
+                    </ul>
+                </div>
+            <div class="bc" style="background-color: #ffffff;height: 320px;width: 1072px;margin-left:30px;">
+                <div class="right-tab"style="margin-left:10px; padding-top:15px; ">
+
+                    <div class="row" >
+                        <div class="table-box col-md-9"   >
+                            <div class="table"style="margin:0;  ">
+                                <table class="table price x1"style="margin:0">
+                                    <tr>
+                                        <td class="left-side-title"rowspan="4" style="width: 80px;">轮播</td>
+                                        <td class="price-table-title" style="width: 75px;" >播放时间段</td>
+                                        <td class="price-table-title" style="width: 36px;">序号</td>
+                                        <td class="price-table-title" style="width: 60px;">文件名</td>
+                                        <td class="price-table-title" style="width: 62px;">播放方式</td>
+                                        <td class="price-table-title" style="width: 62px;">播放次数</td>
+                                        <td class="price-table-title" style="width: 63px;">所属订单</td>
+                                        <td class="price-table-title" style="width: 36px;">预览</td>
+                                        <td class="price-table-title" style="width: 207px;" ></td>
+                                    </tr>
+                                    <tr>
+                                        <!--<td>
+                                            <input type="checkbox">
+                                            <label for="" style=" margin:0;margin-left:5px;">1</label>
+                                        </td>-->
+                                        <td>18:00-19:00</td>
+                                        <td>1</td>
+                                        <td>广告1.avi</td>
+                                        <td>轮播</td>
+                                        <td>60</td>
+
+                                        <td>0012354</td>
+                                        <td>
+                                            <a class="map-fdj center-block" href=""></a>
+                                        </td>
+                                        <td>
+                                            <div class="tab-content" style="height: 18px;overflow: hidden">
+                                                <a href="#"style="float: left;margin-left: 5px;">
+                                                    <img src="images/arrows1.png" alt=""style="float: left;margin-top: 2px;"/>
+                                                </a>
+                                                <a href="#" style="float: left;margin-left: 5px;">
+                                                    <img src="images/arrows2.png" alt="" style="float: left;margin-top: 2px;"/>
+                                                </a>
+                                                 <p style="float: left;font-size: 12px;color: #666666; margin-left: 10px;margin-top: 2px;">
+                                                     移动到
+                                                     <span style="
+                                                      width: 30px; height: 20px; background-color: #ffffff;
+                                                      padding: 6px 12px 6px 12px; margin-left: 6px;margin-right: 6px;"> 5 </span>
+                                                     行
+                                                 </p>
+                                                <a  class="btn btn-default btn-set-pro"  style="height:18px;font-size: 12px;float: left;margin-left: 5px;">修改</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!--<td>
+                                            <input type="checkbox">
+                                            <label for="" style=" margin:0;margin-left:5px;">1</label>
+                                        </td>-->
+                                        <td>18:00-19:00</td>
+                                        <td>1</td>
+                                        <td>广告1.avi</td>
+                                        <td>轮播</td>
+                                        <td>60</td>
+
+                                        <td>0012354</td>
+                                        <td>
+                                            <a class="map-fdj center-block" href=""></a>
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                            <div class="table"style="margin:0">
+                                <table class="table price x1"style="margin:0">
+
+                                    <tr>
+                                        <!--<td>
+                                            <input type="checkbox">
+                                            <label for="" style=" margin:0;margin-left:5px;">1</label>
+                                        </td>-->
+                                        <td class="left-side-title"rowspan="4" style="width: 80px;">黄金时段</td>
+                                        <td style="width: 75px;">18:00-19:00</td>
+                                        <td style="width: 36px;"> 1 </td>
+                                        <td style="width: 60px;">广告1.avi</td>
+                                        <td style="width: 62px;">轮播</td>
+                                        <td style="width: 62px;">60</td>
+
+                                        <td style="width: 63px;">0012354</td>
+                                        <td style="width: 36px;">
+                                            <a class="map-fdj center-block" href=""></a>
+                                        </td>
+                                        <td style="width: 207px;">
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!--<td>
+                                            <input type="checkbox">
+                                            <label for="" style=" margin:0;margin-left:5px;">1</label>
+                                        </td>-->
+                                        <td>18:00-19:00</td>
+                                        <td>1</td>
+                                        <td>广告1.avi</td>
+                                        <td>轮播</td>
+                                        <td>60</td>
+
+                                        <td>0012354</td>
+                                        <td>
+                                            <a class="map-fdj center-block" href=""></a>
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!--<td>
+                                            <input type="checkbox">
+                                            <label for="" style=" margin:0;margin-left:5px;">1</label>
+                                        </td>-->
+                                        <td>18:00-19:00</td>
+                                        <td>1</td>
+                                        <td>广告1.avi</td>
+                                        <td>轮播</td>
+                                        <td>60</td>
+
+                                        <td>0012354</td>
+                                        <td>
+                                            <a class="map-fdj center-block" href=""></a>
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="table"style="margin:0">
+                                <table class="table price x1"style="margin:0">
+                                    <tr>
+                                        <td class="left-side-title"rowspan="4" style="width: 80px;" >独占</td>
+
+                                        <td style="width: 75px;">18:00-19:00</td>
+                                        <td style="width: 36px;"> 1 </td>
+                                        <td style="width: 60px;">广告1.avi</td>
+                                        <td style="width: 62px;">轮播</td>
+                                        <td style="width: 62px;">60</td>
+
+                                        <td style="width: 63px;">0012354</td>
+                                        <td style="width: 36px;">
+                                            <a class="map-fdj center-block" href=""></a>
+                                        </td>
+                                        <td style="width: 207px;">
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!--<td>
+                                            <input type="checkbox">
+                                            <label for="" style=" margin:0;margin-left:5px;">1</label>
+                                        </td>-->
+                                        <td>18:00-19:00</td>
+                                        <td>1</td>
+                                        <td>广告1.avi</td>
+                                        <td>轮播</td>
+                                        <td>60</td>
+
+                                        <td>0012354</td>
+                                        <td>
+                                            <a class="map-fdj center-block" href=""></a>
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <!--<td>
+                                            <input type="checkbox">
+                                            <label for="" style=" margin:0;margin-left:5px;">1</label>
+                                        </td>-->
+                                        <td>18:00-19:00</td>
+                                        <td>1</td>
+                                        <td>广告1.avi</td>
+                                        <td>轮播</td>
+                                        <td>60</td>
+
+                                        <td>0012354</td>
+                                        <td>
+                                            <a class="map-fdj center-block" href=""></a>
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--修改按钮-->
+                            <!--<p class="center-block" style="width:260px; margin-top:10px">
+                                <a  class="btn btn-default btn-set-pro" style="margin-left:0">修改</a>
+                                <a  class="btn btn-default btn-set-pro">修改</a>
+                                <a  class="btn btn-default btn-set-pro">修改</a>
+                                <a  class="btn btn-default btn-set-pro">修改</a>
+                            </p>-->
+                        </div>
+                        <!--广告位-->
+                        <div class="col-md-4" style="width:220px; height:289px; background:#eee;margin-left: -4px;">
+                            <img class="center-block" src="images/yuft.png" alt="" style="margin-top:100px"></div>
+                    </div>
+                </div>
+            </div>
+                <div style="padding-top:10px; margin-left:30px">
+                    <p>以下终端均使用本节目单</p>
+                    <div class="table"><table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="zdy text-center">终端编号</th>
+                                    <th class="zdy text-center">终端名称</th>
+                                    <th class="zdy text-center">所在区域</th>
+
+                                    <th class="zdy text-center">商业分类</th>
+                                    <th class="zdy text-center">安装位置</th>
+                                    <th class="zdy text-center">地图定位</th>
+
+                                    <th class="zdy text-center">详细地址</th>
+                                    <th class="zdy text-center">
+                                        <input type="checkbox"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dt001</td>
+                                    <td>环球大厦1#</td>
+                                    <td>重庆渝中区</td>
+
+                                    <td>商务楼</td>
+                                    <td>重庆渝中区</td>
+                                    <td>
+                                        <a class="map-ico center-block" href=""></a>
+                                    </td>
+                                    <td>重庆渝中区</td>
+
+                                    <td>
+                                        <input type="checkbox"></td>
+                                </tr><tr><td>dt001</td>
+                                    <td>环球大厦1#</td>
+                                    <td>重庆渝中区</td>
+
+                                    <td>商务楼</td>
+                                    <td>重庆渝中区</td>
+                                    <td>
+                                        <a class="map-ico center-block" href=""></a>
+                                    </td>
+                                    <td>重庆渝中区</td>
+
+                                    <td>
+                                        <input type="checkbox"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="center-block btn-group mb140"style="width:250px;">
+                    <a class="btn btn-next">保存</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot-text">
+        <footer class=" text-center">
+            <a href="">版权所有：重庆君盾科技有限公司</a>
+            <a href="">地址：重庆市渝中区上清寺环球广场12楼</a>
+            <a href="">全国服务热线：400-110-9551</a>
+        </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tab-slide.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>终端地图</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING:Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="background-color:#f4f4f4">
+    <!-- 导航 -->
+    <nav class="navbar navbar-color">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand "href="#">
+                    <img alt="Brand"src="images/logo.png"/>
+                </a>
+            </div>
+            <ul class="nav navbar-nav  navbar-right">
+                <li>
+                    <a href="#">用户名</a>
+                </li>
+                <li>
+                    <a class=""href="#">
+                        <img alt="Brand"src="images/exit.png"/>
+                        退出
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row" >
+            <div class="col-md-2">
+                <div class="subNavBox">
+                    <!-- one -->
+                    <div class="subNav-first">快速操作项</div>
+                    <ul class="navContent-first">
+                        <li>
+                            <a href="oprator-temtial-control.html">终端控制</a>
+                        </li>
+                        <li>
+                            <a href="oprator-customer-order-manage-nocheck.html">订单审核</a>
+                        </li>
+                        <li>
+                            <a href="#">订单列表</a>
+                        </li>
+                        <li>
+                            <a href="oprator-program-modify.html">节目单修改</a>
+                        </li>
+                    </ul>
+                    <!-- two -->
+                    <div class="subNav">广告终端</div>
+                    <ul class="navContent" style="display:block">
+                        <li>
+                            <a href="oprator-add- newtemria.html">新增终端</a>
+                        </li>
+                        <li class="select">
+                            <a href="oprator-temtial-map.html">终端地图</a>
+                        </li>
+                        <li>
+                            <a href="oprator-temtial-list.html">终端列表</a>
+                        </li>
+                        <li>
+                            <a href="oprator-freetime-query.html">空闲查询</a>
+                        </li>
+                    </ul>
+                    <!-- three -->
+                    <div class="subNav">列表管理</div>
+                    <ul class="navContent">
+                        <li>
+                            <a href="">物业小区管理</a>
+                        </li>
+                        <li>
+                            <a href="oprator-customer- Information-manage.html">客户信息管理</a>
+                        </li>
+                        <li>
+                            <a href="oprator-customer-order-manage.html">客户订单管理</a>
+                        </li>
+                    </ul>
+                    <!-- four -->
+                    <div class="subNav">节目单管理</div>
+                    <ul class="navContent">
+                        <li>
+                            <a href="oprator-program-modify.html">节目单修改</a>
+                        </li>
+                    </ul>
+                    <!-- five -->
+                    <div class="subNav">实时插播</div>
+                    <ul class="navContent">
+                        <li>
+                            <a href="operator-creat-real-time-information.html">创建插播信息</a>
+                        </li>
+                        <li>
+                            <a  href="oprator-real-time-information-list.html">插播信息列表</a>
+                        </li>
+                    </ul>
+                    <!-- six -->
+                    <div class="subNav">数据报表</div>
+                    <ul class="navContent">
+                        <li>
+                            <a href="#">暂时没有</a>
+                        </li>
+
+                    </ul>
+                    <!-- seven -->
+                    <div class="subNav">系统管理</div>
+                    <ul class="navContent">
+                        <li>
+                            <a href="oprator-temtial-control.html">终端控制</a>
+                        </li>
+                        <li>
+                            <a href="oprator-price-set.html">价格设置</a>
+                        </li>
+                        <li>
+                            <a href="oprator-user-feedback.html">客户留言</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10" style="margin:0; padding:0; position:relative">
+                <ol class="breadcrumb boder">
+
+                    <li>
+                        <img alt="Brand" src="images/home.png"  />
+                        <a href="#" style="color:#666">你所在的位置</a>
+                    </li>
+                    <li>
+                        <a href="#" style="color:#666">导航页</a>
+                    </li>
+                </ol>
+                <div id="mapContainer"></div>
+                <div id="tip">
+                    省：
+                    <select id='province' style="width:100px"  onchange='search(this)'></select>
+                    市：
+                    <select id='city' style="width:100px"  onchange='search(this)'></select>
+                    区：
+                    <select id='district' style="width:100px" onchange='search(this)'></select>
+                    商圈：
+                    <select id='biz_area' style="width:100px"></select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot-text">
+        <footer class=" text-center">
+            <a href="">版权所有：重庆君盾科技有限公司</a>
+            <a href="">地址：重庆市渝中区上清寺环球广场12楼</a>
+            <a href="">全国服务热线：400-110-9551</a>
+        </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tab-slide.js"></script>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=4b5a6537540fa8cbab30c96cf3a60a78"></script>
+    <script type="text/javascript">
+        var mapObj, district, polygons=[], citycode;
+        var citySelect = document.getElementById('city');
+        var districtSelect = document.getElementById('district');
+        var areaSelect = document.getElementById('biz_area');;
+        
+        mapObj = new AMap.Map('mapContainer',{
+            resizeEnable: true, 
+            layers: [
+                new AMap.TileLayer()
+            ],
+            view: new AMap.View2D({
+                center: new AMap.LngLat(116.30946,39.937629),
+                zoom: 3
+            })
+        });
+          
+        var provinceList = ['北京市', '天津市', '河北省', '山西省', '内蒙古自治区', '辽宁省', '吉林省','黑龙江省', '上海市', '江苏省', '浙江省', '安徽省', '福建省', '江西省', '山东省','河南省', '湖北省', '湖南省', '广东省', '广西壮族自治区', '海南省', '重庆市','四川省', '贵州省', '云南省', '西藏自治区', '陕西省', '甘肃省', '青海省', '宁夏回族自治区', '新疆维吾尔自治区', '台灣', '香港特别行政区', '澳门特别行政区'];
+        var provinceSelect = document.getElementById('province');
+        var content = '<option>--请选择--</option>';
+        for(var i =0, l = provinceList.length; i < l; i++){
+          content += '<option value="province">'+provinceList[i]+'</option>';
+          provinceSelect.innerHTML = content;
+        }
+        
+        //行政区划查询
+           
+        AMap.service(["AMap.DistrictSearch"], function() {
+            var opts = {
+                subdistrict: 1,   //返回下一级行政区
+                extensions: 'all',  //返回行政区边界坐标组等具体信息
+                level:'city'  //查询行政级别为 市
+            };
+        
+            //实例化DistrictSearch
+            district = new AMap.DistrictSearch(opts);
+        });
+        
+        
+        
+        function getData(e){
+              var dList = e.districtList;
+              for(var m = 0,ml = dList.length; m < ml; m++){
+                var data = e.districtList[m].level;
+                var bounds = e.districtList[m].boundaries;
+                //只绘制 区, 且 本级别行政区划是上一级区划的下级行政区
+                if(data == "district" && dList[m].citycode === citycode){
+                  if(bounds) {
+                    for(var i =0, l = bounds.length; i < l; i++){
+                      //生成行政区划polygon
+                      var polygon = new AMap.Polygon({
+                        map:mapObj,
+                        strokeWeight:1,
+                        strokeColor:'#CC66CC',
+                        fillColor:'#CCF3FF',
+                        fillOpacity:0.7,
+                        path:bounds[i]
+                      });
+                      polygons.push(polygon);
+                    }
+                    mapObj.setFitView();//地图自适应
+                  }
+                }
+        
+                var list = e.districtList || [],
+                    subList =[], level, nextLevel;
+                if(list.length >= 1) {
+                  subList = list[0].districtList;
+                  level = list[0].level;
+                }
+        
+                //清空下一级别的下拉列表
+                if(level === 'province'){
+                  
+                  nextLevel = 'city';
+                  citySelect.innerHTML = '';
+                  districtSelect.innerHTML = '';
+                  areaSelect.innerHTML = '';
+                }else if(level === 'city'){
+        
+                  nextLevel = 'district';
+                  districtSelect.innerHTML = '';
+                  areaSelect.innerHTML = '';
+                } else if(level === 'district') {
+                    
+                    nextLevel = 'biz_area';
+                    areaSelect.innerHTML = '';
+                }
+        
+                if(subList){
+                  var contentSub = '<option>--请选择--</option>';
+                  for(var i=0,l=subList.length; i<l; i++){
+                    var name = subList[i].name; 
+                    var levelSub = subList[i].level;
+                    var cityCode = subList[i].citycode;
+                    contentSub += '<option value="'+levelSub+'|'+cityCode+'">'+name+'</option>';
+                    document.querySelector('#'+levelSub).innerHTML = contentSub;
+                  }
+                }
+              } 
+        }
+        
+        function search(obj){
+          //清除地图上所有覆盖物
+          for(var i = 0, l = polygons.length; i < l; i ++){
+            polygons[i].setMap(null);
+          }
+          
+          var option = obj[obj.options.selectedIndex];
+          var arrTemp = option.value.split('|');
+          var level = arrTemp[0];//行政级别
+          citycode = arrTemp[1];// 城市编码
+          var keyword = option.text; //关键字
+        
+          district.setLevel(level); //行政区级别
+          //行政区查询
+          district.search(keyword, function(status, result){
+            getData(result);
+          }); 
+        }
+    </script></body>
+</html>
