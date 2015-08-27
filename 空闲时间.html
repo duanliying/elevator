@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width, initial-scale=1">
+    <title>空闲时间</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"href="css/index.css"rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css"rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING:Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="background-color:#f4f4f4;">
+    <!-- 导航 -->
+    <nav class="navbar navbar-color">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand "href="#">
+                    <img alt="Brand"src="images/logo.png"/>
+                </a>
+            </div>
+            <ul class="nav navbar-nav  navbar-right">
+                <li>
+                    <a href="#">用户名</a>
+                </li>
+                <li>
+                    <a class=""href="#">
+                        <img alt=""src="images/order.png"/>
+                        我的订单
+                    </a>
+                </li>
+                <li>
+                    <a class=""href="#">
+                        <img alt="Brand"src="images/exit.png"/>
+                        退出
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!--面包屑导航 -->
+    <div class="container"style="height:36px;">
+        <ol class="breadcrumb">
+            <li>
+                <img alt="Brand"src="images/home.png"/>
+                <a href="#">你所在的位置</a>
+            </li>
+            <li>
+                <a href="#">广告投放申请</a>
+            </li>
+            <li>
+                <a href="#">订单提交</a>
+            </li>
+        </ol>
+    </div>
+    <div style="border-bottom: 1px solid #ddd "></div>
+    <div class="container" style="padding:30px 0;">
+        <div class="container" style="padding:30px 0;">
+            <div class="allsele" style="margin-left:0">
+                <span class="sel-text">广告筛选</span>
+                <div class="selectprovince sel-pos list-unstyled" id="selectpronvice">
+                    <span>视频广告位</span> <i class="ci-right"><s>◇</s></i> 
+                    <ul class="pmzero" style="display: none;">
+                        <li>图片广告位</li>
+                        <li>文字广告位</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="allsele">
+                <span class="sel-text">播放方式</span>
+                <div class="selectprovince sel-pos list-unstyled" id="selectpronvice">
+                    <span>独占</span> <i class="ci-right"><s>◇</s></i> 
+                    <ul class="pmzero" style="display: none;">
+                        <li>轮播</li>
+                        <li>黄金时段</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="allsele">
+                <span class="sel-text">时间选择</span>
+                <input type="text">
+                --
+                <input type="text">
+                <a class="btn-radio" href="">筛选</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" >
+        <div class="order-list">
+            <ul class="nav navbar-nav center-block order-list-text">
+                <li> <b>终端编号:</b>
+                    000001
+                </li>
+                <li> <b>终端名称:</b>
+                    环球大厦1#
+                </li>
+                <li>
+                    <b>所在区域</b>
+                    环球大厦
+                </li>
+                <li>
+                    <b>地址</b>
+                    重庆渝中区上清寺
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container"style="padding-top:20px;">
+        <div class="table">
+            <div class="table-title-top" style=" height:22px;">
+                <p class="text-center fy16">视频广告位</p>
+                <p class="color-red pull-left">
+                    独占投放注意：
+                1、您选择的独占时间段不能与已被占用时间段有冲突。
+                2、独占的时间段长度必须小于或等于空闲时间。
+                    <p class="pull-right">
+                        <span class="time-squre" ></span>
+                        无效时段
+                        <span class="time-squre one"></span>
+                        独占时段
+                    </p>
+                </p>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="zdy text-center">日期</th>
+                        <th class="zdy text-center">星期</th>
+                        <th class="zdy text-center">空闲时间</th>
+                        <th class="zdy text-center">已被独占时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>6月1号</td>
+                        <td>星期一</td>
+                        <td>8小时</td>
+                        <td>
+                            <div class="hour-list">
+                                <dl>
+                                    <dt>
+                                        <span>0</span>
+                                        <span>1</span>
+                                        <span>2</span>
+                                        <span>3</span>
+                                        <span>4</span>
+                                        <span>5</span>
+                                        <span>6</span>
+                                        <span>7</span>
+                                        <span>8</span>
+                                        <span>9</span>
+                                        <span>10</span>
+                                        <span>11</span>
+                                        <span>12</span>
+                                        <span>13</span>
+                                        <span>14</span>
+                                        <span>15</span>
+                                        <span>16</span>
+                                        <span>17</span>
+                                        <span>18</span>
+                                        <span>19</span>
+                                        <span>20</span>
+                                        <span>21</span>
+                                        <span>22</span>
+                                        <span>23</span>
+                                        <span>24</span>
+                                    </dt>
+                                    <dd></dd><dd></dd>
+                                    <dd></dd><dd></dd><dd></dd>
+                                    <dd></dd><dd></dd>
+                                    <dd></dd>
+                                    <dd></dd>
+                                    <dd></dd>
+                                    <dd></dd>
+                                    <dd></dd>
+                                    <dd></dd>
+                                    <dd></dd>
+                                    <dd></dd>
+                                    <dd></dd>
+                                    <dd></dd>
+                                    <dd></dd>
+                                    <dd></dd>
+                                    <dd></dd>
+                                   
+                                    <dd></dd>
+                                  
+                                    <dd></dd>
+                                  
+                                    <dd></dd>
+                                  
+                                    <dd></dd>
+                                </dl>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6月1号</td>
+                        <td>星期一</td>
+                        <td>8小时</td>
+                        <td>
+                            <div class="hour-list">
+                                <dl>
+                                    <dt>
+                                        <span>0</span>
+                                        <span>1</span>
+                                        <span>2</span>
+                                        <span>3</span>
+                                        <span>4</span>
+                                        <span>5</span>
+                                        <span>6</span>
+                                        <span>7</span>
+                                        <span>8</span>
+                                        <span>9</span>
+                                        <span>10</span>
+                                        <span>11</span>
+                                        <span>12</span>
+                                        <span>13</span>
+                                        <span>14</span>
+                                        <span>15</span>
+                                        <span>16</span>
+                                        <span>17</span>
+                                        <span>18</span>
+                                        <span>19</span>
+                                        <span>20</span>
+                                        <span>21</span>
+                                        <span>22</span>
+                                        <span>23</span>
+                                        <span>24</span>
+
+                                    </dt>
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                    <!-- 
+                                    -->
+                                    <dd></dd>
+                                </dl>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container mb140">
+        <div class="center-block btn-group" style="width:120px;">
+
+            <a class="btn btn-next">返回</a>
+        </div>
+    </div>
+    <div class="container foot-text">
+        <footer class=" text-center">
+            <a href="">版权所有：重庆君盾科技有限公司</a>
+            <a href="">地址：重庆市渝中区上清寺环球广场12楼</a>
+            <a href="">全国服务热线：400-110-9551</a>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>终端控制</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"></head>
+<body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-color">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand "href="#">
+                    <img alt="Brand"src="images/logo.png"/>
+                </a>
+            </div>
+            <ul class="nav navbar-nav  navbar-right">
+                <li>
+                    <a href="#">用户名</a>
+                </li>
+                <li>
+                    <a class=""href="#">
+                        <img alt="Brand"src="images/exit.png"/>
+                        退出
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row" >
+            <div class="col-md-2">
+                <div class="subNavBox">
+                    <!-- one -->
+                    <div class="subNav-first">快速操作项</div>
+                    <ul class="navContent-first">
+                        <li  class="select">
+                            <a href="oprator-temtial-control.html">终端控制</a>
+                        </li>
+                        <li>
+                            <a href="oprator-customer-order-manage-nocheck.html">订单审核</a>
+                        </li>
+                        <li>
+                            <a href="#">订单列表</a>
+                        </li>
+                        <li>
+                            <a href="oprator-program-modify.html">节目单修改</a>
+                        </li>
+                    </ul>
+                    <!-- two -->
+                    <div class="subNav">广告终端</div>
+                    <ul class="navContent">
+                        <li>
+                            <a href="oprator-add- newtemria.html">新增终端</a>
+                        </li>
+                        <li>
+                            <a href="oprator-temtial-map.html">终端地图</a>
+                        </li>
+                        <li>
+                            <a href="oprator-temtial-list.html">终端列表</a>
+                        </li>
+                        <li>
+                            <a href="oprator-freetime-query.html">空闲查询</a>
+                        </li>
+                    </ul>
+                    <!-- three -->
+                    <div class="subNav">列表管理</div>
+                    <ul class="navContent">
+                        <li>
+                            <a href="">物业小区管理</a>
+                        </li>
+                        <li>
+                            <a href="oprator-customer- Information-manage.html">客户信息管理</a>
+                        </li>
+                        <li>
+                            <a href="oprator-customer-order-manage.html">客户订单管理</a>
+                        </li>
+                    </ul>
+                    <!-- four -->
+                    <div class="subNav">节目单管理</div>
+                    <ul class="navContent">
+                        <li>
+                            <a href="oprator-program-modify.html">节目单修改</a>
+                        </li>
+                    </ul>
+                    <!-- five -->
+                    <div class="subNav">实时插播</div>
+                    <ul class="navContent">
+                        <li>
+                            <a href="operator-creat-real-time-information.html">创建插播信息</a>
+                        </li>
+                        <li>
+                            <a  href="oprator-real-time-information-list.html">插播信息列表</a>
+                        </li>
+                    </ul>
+                    <!-- six -->
+                    <div class="subNav">数据报表</div>
+                    <ul class="navContent">
+                        <li>
+                            <a href="#">暂时没有</a>
+                        </li>
+
+                    </ul>
+                    <!-- seven -->
+                    <div class="subNav">系统管理</div>
+                    <ul class="navContent">
+                        <li>
+                            <a href="oprator-temtial-control.html">终端控制</a>
+                        </li>
+                        <li>
+                            <a href="oprator-price-set.html">价格设置</a>
+                        </li>
+                        <li>
+                            <a href="oprator-user-feedback.html">客户留言</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <ol class="breadcrumb boder">
+
+                    <li>
+                        <img alt="Brand" src="images/home.png"  />
+                        <a href="#">你所在的位置</a>
+                    </li>
+                    <li>
+                        <a href="#">系统管理</a>
+                    </li>
+                    <li>
+                        <a href="#">终端控制</a>
+                    </li>
+                </ol>
+                 <div class="right-tab">
+                      <div class="threeselect a">
+                                <span class="at at1 pull-left">区域筛选</span>
+                                <div class='selectprovince list-unstyled' id="selectpronvice">
+                                    <span>重庆</span>
+                                    <ul class="pmzero">
+                                        <li>重庆市</li>
+                                        <li>北京市</li>
+                                    </ul>
+                                </div>
+                                <div class='selectcity list-unstyled' id="selectcity">
+                                    <span>重庆</span>
+                                    <ul class="pmzero">
+                                        <li>重庆市</li>
+                                        <li>北京市</li>
+                                    </ul>
+                                </div>
+                                <div class='selectarea list-unstyled' id="selectarea">
+                                    <span>重庆</span>
+                                    <ul class="pmzero">
+                                        <li>重庆市</li>
+                                        <li>北京市</li>
+                                    </ul>
+                                </div>
+                            <div class='selectarea list-unstyled' id="selectarea">
+                                    <span>小区</span>
+                                    <ul class="pmzero">
+                                        <li>顶顶顶</li>
+                                        <li>订单 </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    <div  class="form-inline fenlei">
+                        <span class="color3 form-head-text" style=";">商业分类</span>
+                        <a class="btn btn-business form-control select" href="">全部</a>
+                        <a class="btn btn-business form-control" href="">住宅楼</a>
+                        <a class="btn btn-business form-control" href="">商务楼</a>
+                        <a class="btn btn-business form-control" href="">高档百货商厦</a>
+                        <a class="btn btn-business form-control" href="">高级公寓楼</a>
+                        <a class="btn btn-business form-control" href="">酒店宾馆</a> 
+                        <a class="btn btn-business form-control" href="">商住两用楼</a>
+                   </div>
+                   <div class="pt10">
+                    <div class="table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="zdy text-center">终端编号</th>
+                                    <th class="zdy text-center">终端名称</th>
+                                    <th class="zdy text-center">小区名称</th>
+                                    <th class="zdy text-center">所在区域</th>
+                                    <th class="zdy text-center">商业分类</th>
+                                    <th class="zdy text-center">地图定位</th>
+                                    <th class="zdy text-center">音量</th>
+                                    <th class="zdy text-center">播放同步</th>
+                                    <th class="zdy text-center">软件升级</th>
+                                    <th class="zdy text-center">操作日志</th>
+                                    <th class="zdy text-center">
+                                         <b class="check-box select">
+                                   <input type="checkbox" style="display:none">
+                                 </b></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dt001</td>
+                                    <td>环球大厦1#</td>
+                                    <td>环球大厦1#</td>
+                                    <td>重庆渝中区</td>
+                                    <td>商务楼</td>
+                                    <td>
+                                        <a class="map-ico center-block" href=""></a>
+                                    </td>
+                                    <td>40</td>
+                                    <td>
+                                        <a class="btn btn-re-de" href="">同步</a>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-re-de" href="">升级</a>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-re-de" href="">查看</a>
+                                    </td>
+                                    <td>
+                                         <b class="check-box select">
+                                   <input type="checkbox" style="display:none">
+                                 </b></td>
+                                </tr>
+                                <tr>
+                                    <td>dt001</td>
+                                    <td>环球大厦1#</td>
+                                    <td>环球大厦1#</td>
+                                    <td>重庆渝中区</td>
+                                    <td>商务楼</td>
+                                    <td>
+                                        <a class="map-ico center-block" href=""></a>
+                                    </td>
+                                    <td>40</td>
+                                    <td>
+                                        <a class="btn btn-re-de" href="">同步</a>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-re-de" href="">升级</a>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-re-de" href="">查看</a>
+                                    </td>
+                                    <td>
+                                         <b class="check-box select">
+                                   <input type="checkbox" style="display:none">
+                                 </b></td>
+                                </tr>
+                                <tr>
+                                    <td>dt001</td>
+                                    <td>环球大厦1#</td>
+                                    <td>环球大厦1#</td>
+                                    <td>重庆渝中区</td>
+                                    <td>商务楼</td>
+                                    <td>
+                                        <a class="map-ico center-block" href=""></a>
+                                    </td>
+                                    <td>40</td>
+                                    <td>
+                                        <a class="btn btn-re-de" href="">同步</a>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-re-de" href="">升级</a>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-re-de" href="">查看</a>
+                                    </td>
+                                    <td>
+                                         <b class="check-box select">
+                                   <input type="checkbox" style="display:none">
+                                 </b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div >
+                    <div class="form-inline">
+                      
+                            <span class="color3 form-head-text" style=";">工作时间</span>
+                            <a class="btn btn-business form-control select" href="">周一</a>
+                            <a class="btn btn-business form-control" href="">周二</a>
+                            <a class="btn btn-business form-control" href="">周三</a>
+                            <a class="btn btn-business form-control" href="">周四</a>
+                            <a class="btn btn-business form-control" href="">周五</a>
+                            <a class="btn btn-business form-control" href="">周六</a>
+                            <a class="btn btn-business form-control" href="">周日</a>
+                    
+                    </div>
+                    <div class="form-inline pt10"> 
+                    <div class="form-group">
+                                <p class="form-control-static" style="margin-left:18px;">开机时间</p>
+                                <input class="form-control form-control-data" type="text" style="width:106px;" >
+                                <p class="form-control-static" style="margin-left:18px;">关机时间</p>
+                                <input class="form-control form-control-data" type="text" style="width:106px;">
+                                <a class="btn btn-business select btn-ad form-control" href="" >设置生效</a>
+                            </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="foot-text">
+        <footer class=" text-center">
+            <a href="">版权所有：重庆君盾科技有限公司</a>
+            <a href="">地址：重庆市渝中区上清寺环球广场12楼</a>
+            <a href="">全国服务热线：400-110-9551</a>
+        </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tab-slide.js"></script>
+</body>
+</html>
